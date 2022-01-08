@@ -1,0 +1,26 @@
+.heading{
+    color: white;
+    text-align: left;
+    margin-left: 10%;
+    margin-top: 3%;
+}
+
+.balance-heading{
+    color :white;
+    text-align: left;
+    margin-left: 20%;
+    margin-top: 10%;
+}
+
+.balance-value{
+    color :white;
+    text-align: left;
+    margin-left: 20%;
+    margin-top: 2%;
+}
+
+.buttons{
+    float: left;
+    margin-left: 20%;
+
+}

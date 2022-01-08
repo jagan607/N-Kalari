@@ -1,0 +1,33 @@
+.heading{
+    color: white;
+    text-align: left;
+    margin-left: 10%;
+    margin-top: 3%;
+}
+
+.balance-heading{
+    color :white;
+    text-align: left;
+    margin-left: 20%;
+    margin-top: 10%;
+}
+
+.balance-value{
+    color :white;
+    text-align: left;
+    margin-left: 20%;
+    margin-top: 2%;
+}
+
+.buttons{
+    width: 30%;
+    float: left;
+    margin-left: 10%;
+    margin-top: 3%;
+}
+
+.withdraw{
+    margin-right: 2%;
+    width: 6rem;
+    height: 3rem;
+}
