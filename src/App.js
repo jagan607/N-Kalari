@@ -1,11 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
-import React, { Component } from "react"
-import Login from './components/Login/Login'
-import {Wallet} from './components/wallet/Wallet'
-import {history} from './helpers/history'
-import {Router, Route, Routes } from "react-router-dom";
-import {Signup} from './components/signup/Signup'
+import logo from "./logo.svg";
+import "./App.css";
+import React, { Component } from "react";
+import Login from "./components/Login/Login";
+import { Wallet } from "./components/wallet/Wallet";
+import { history } from "./helpers/history";
+import { Router, Route, Switch, BrowserRouter } from "react-router-dom";
+import { Signup } from "./components/signup/Signup";
+import OtpScreen from "./components/OtpScreen/OtpScreen";
 
 class App extends Component {
   constructor(props) {
@@ -13,20 +14,17 @@ class App extends Component {
   }
 
   render() {
-    return(
-      <div>
-        {/* <Login></Login> */}
-        <Signup></Signup>
-        {/* <Wallet></Wallet> */}
- 
-          {/* <Route exact path="/">
-          </Route> */}
-          {/* <Route exact path="/wallet">
-            <Wallet/>
-          </Route> */}
-     </div>
+    return (
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/login" component={Login} />
+          <Route exact path="/signup" component={Signup} />
+          <Route exact path="/wallet" component={Wallet} />
+          <Route exact path="/otp-verify" component={OtpScreen} />
+        </Switch>
+      </BrowserRouter>
     );
-}
+  }
 }
 
 export default App;
