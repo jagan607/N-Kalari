@@ -63,19 +63,15 @@ handleChange = (e) =>{
 
 render(){
     return(
-        <div className="login-input-section">
-        <h1 className="Login-heading">Login to Nkalari</h1>
+        <div>
+        <h2 className="Login-heading">Login</h2>
         <form onSubmit={this.onSignInSubmit}>
-          {/* <div id="sign-in-button" ></div> */}
-          <input className="mobile-input" type="number" name="mobile" placeholder="Mobile number" required onChange={this.handleChange}/>
-          
-    
-          <input className="email-input" type="text" name="email" placeholder="email (Optional)" onChange={this.handleChange}/>
-          
+          <div id="sign-in-button" className="btn-signin"></div>
+          <input type="number" name="mobile" placeholder="Mobile number" required onChange={this.handleChange}/>
+          <button type="submit">Submit</button>
         </form>
-        <button type="submit" className="btn-signin">Submit</button> 
 
-        <h1>Enter OTP</h1>
+        <h2>Enter OTP</h2>
         <form onSubmit={this.onSubmitOTP}>
           <input type="number" name="otp" placeholder="OTP Number" required onChange={this.handleChange}/>
           <button type="submit">Submit</button>

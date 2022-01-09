@@ -1,0 +1,12 @@
+
+.sign-in-button{
+    margin-right: 4%;
+    width: 8rem;
+    height: 3rem;
+    background: #384BF5;
+    border-radius: 4px;
+    color: white;
+    border: none;
+    max-width: 100%;
+
+}

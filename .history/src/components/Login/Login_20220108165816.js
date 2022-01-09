@@ -69,8 +69,11 @@ render(){
           {/* <div id="sign-in-button" ></div> */}
           <input className="mobile-input" type="number" name="mobile" placeholder="Mobile number" required onChange={this.handleChange}/>
           
-    
-          <input className="email-input" type="text" name="email" placeholder="email (Optional)" onChange={this.handleChange}/>
+        </form>
+
+        <form onSubmit={this.onSignInSubmit}>
+          {/* <div id="sign-in-button" ></div> */}
+          <input className="email-input" type="text" name="email" placeholder="email (Optional)" required onChange={this.handleChange}/>
           
         </form>
         <button type="submit" className="btn-signin">Submit</button> 

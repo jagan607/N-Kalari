@@ -5,7 +5,7 @@ import Login from './components/Login/Login'
 import {Wallet} from './components/wallet/Wallet'
 import {history} from './helpers/history'
 import {Router, Route, Routes } from "react-router-dom";
-import {Signup} from './components/signup/Signup'
+
 
 class App extends Component {
   constructor(props) {
@@ -15,8 +15,8 @@ class App extends Component {
   render() {
     return(
       <div>
-        {/* <Login></Login> */}
-        <Signup></Signup>
+        <Login></Login>
+
         {/* <Wallet></Wallet> */}
  
           {/* <Route exact path="/">
